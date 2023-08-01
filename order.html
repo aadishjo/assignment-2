@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website - Order</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <body style="background-image: url(sky.jpeg);""></body>
+  <header>
+    <h1>Place Your Order :</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="order.html">Order</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Order Form</h2>
+      <form action="submit_order.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+
+        <label>CHOOSE YOUR FLAVOUR</label>
+       
+        <label for="color-red">SWEET OR HOT</label>
+        <input type="radio" id="color-blue" name="color" value="blue">
+        <label for="color-blue">SWEET</label>
+        <input type="radio" id="color-green" name="color" value="green">
+        <label for="color-green">HOT</label>
+        <input type="radio" id="color-blue" name="color" value="blue">
+
+        
+        
+        
+        
+        <label for="option">SELECT YOUR SIZE:</label>
+        <select id="option" name="option" required>
+          <option value="option1">SMALL</option>
+          <option value="option2">MEDIUM</option>
+          <option value="option3">LARGE</option>
+        </select>
+
+        <label>
+          <input type="checkbox" name="proceed" value="yes">CLICK TO CONTINUE
+        </label>
+
+        <button type="submit">Place Order</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 My Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
